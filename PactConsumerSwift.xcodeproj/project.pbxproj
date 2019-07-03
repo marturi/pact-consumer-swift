@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A109FBA922CB6A6C007B46F7 /* XCodeErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */; };
+		A109FBAA22CB6A6C007B46F7 /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */; };
+		A109FBAB22CB6A9A007B46F7 /* XCodeErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */; };
+		A109FBAC22CB6A9D007B46F7 /* XCodeErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */; };
+		A109FBAE22CB6AA5007B46F7 /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */; };
+		A109FBAF22CB6AA6007B46F7 /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */; };
+		A109FBC322CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
+		A109FBC422CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
+		A109FBC522CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
 		AD01EDB61F74BF4A00827C66 /* InteractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17A6511F74BAA900219F39 /* InteractionSpec.swift */; };
 		AD17A5921F74AF5300219F39 /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD17A5881F74AF5300219F39 /* PactConsumerSwift.framework */; };
 		AD17A5991F74AF5300219F39 /* PactConsumerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AD17A58B1F74AF5300219F39 /* PactConsumerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -101,6 +110,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCodeErrorReporter.swift; sourceTree = "<group>"; };
+		A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReporter.swift; sourceTree = "<group>"; };
+		A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCapture.swift; sourceTree = "<group>"; };
 		AD17A5881F74AF5300219F39 /* PactConsumerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PactConsumerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD17A58B1F74AF5300219F39 /* PactConsumerSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PactConsumerSwift.h; sourceTree = "<group>"; };
 		AD17A58C1F74AF5300219F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,6 +235,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A109FBA622CB6A6C007B46F7 /* Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */,
+				A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */,
+			);
+			path = Reporting;
+			sourceTree = "<group>";
+		};
+		A109FBC122CCB9D7007B46F7 /* Reporting */ = {
+			isa = PBXGroup;
+			children = (
+				A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */,
+			);
+			path = Reporting;
+			sourceTree = "<group>";
+		};
 		AD17A57C1F74AF1000219F39 = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +280,7 @@
 		AD17A5E91F74B03000219F39 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A109FBA622CB6A6C007B46F7 /* Reporting */,
 				AD17A64A1F74BA8A00219F39 /* Interaction.swift */,
 				AD17A64B1F74BA8A00219F39 /* Matcher.swift */,
 				AD17A64C1F74BA8A00219F39 /* MockService.swift */,
@@ -263,6 +293,7 @@
 		AD17A5EA1F74B03500219F39 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A109FBC122CCB9D7007B46F7 /* Reporting */,
 				AD17A5F51F74B0CA00219F39 /* PactConsumerSwiftTests */,
 				AD17A5EE1F74B09D00219F39 /* Supporting Files */,
 				AD17A6511F74BAA900219F39 /* InteractionSpec.swift */,
@@ -819,6 +850,8 @@
 				AD17A6671F74BB8300219F39 /* Interaction.swift in Sources */,
 				AD17A6681F74BB8300219F39 /* Matcher.swift in Sources */,
 				AD17A6691F74BB8300219F39 /* MockService.swift in Sources */,
+				A109FBA922CB6A6C007B46F7 /* XCodeErrorReporter.swift in Sources */,
+				A109FBAA22CB6A6C007B46F7 /* ErrorReporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -828,6 +861,7 @@
 			files = (
 				AD17A65E1F74BB7E00219F39 /* PactSpecs.swift in Sources */,
 				AD17A65B1F74BB7E00219F39 /* AnimalServiceClient.swift in Sources */,
+				A109FBC322CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A65D1F74BB7E00219F39 /* MatcherSpec.swift in Sources */,
 				AD17A6551F74BB7300219F39 /* OCAnimalServiceClient.m in Sources */,
 				AD17A6561F74BB7300219F39 /* PactObjectiveCTests.m in Sources */,
@@ -843,6 +877,8 @@
 				AD17A66C1F74BB8300219F39 /* Matcher.swift in Sources */,
 				AD17A66B1F74BB8300219F39 /* Interaction.swift in Sources */,
 				AD17A66D1F74BB8300219F39 /* MockService.swift in Sources */,
+				A109FBAB22CB6A9A007B46F7 /* XCodeErrorReporter.swift in Sources */,
+				A109FBAE22CB6AA5007B46F7 /* ErrorReporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +888,7 @@
 			files = (
 				AD17A6571F74BB7400219F39 /* OCAnimalServiceClient.m in Sources */,
 				AD17A65F1F74BB7E00219F39 /* AnimalServiceClient.swift in Sources */,
+				A109FBC422CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A6621F74BB7E00219F39 /* PactSpecs.swift in Sources */,
 				AD17A6581F74BB7400219F39 /* PactObjectiveCTests.m in Sources */,
 				AD17A6611F74BB7E00219F39 /* MatcherSpec.swift in Sources */,
@@ -867,6 +904,8 @@
 				AD17A6701F74BB8400219F39 /* Matcher.swift in Sources */,
 				AD17A66F1F74BB8400219F39 /* Interaction.swift in Sources */,
 				AD17A6711F74BB8400219F39 /* MockService.swift in Sources */,
+				A109FBAC22CB6A9D007B46F7 /* XCodeErrorReporter.swift in Sources */,
+				A109FBAF22CB6AA6007B46F7 /* ErrorReporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -876,6 +915,7 @@
 			files = (
 				ADC03E3F1F74C987003FCA6A /* OCAnimalServiceClient.m in Sources */,
 				AD17A6631F74BB7F00219F39 /* AnimalServiceClient.swift in Sources */,
+				A109FBC522CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A6661F74BB7F00219F39 /* PactSpecs.swift in Sources */,
 				ADC03E401F74C989003FCA6A /* PactObjectiveCTests.m in Sources */,
 				ADC03E3D1F74C920003FCA6A /* InteractionSpec.swift in Sources */,

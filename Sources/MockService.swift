@@ -10,6 +10,7 @@ open class MockService: NSObject {
   fileprivate let consumer: String
   fileprivate let pactVerificationService: PactVerificationService
   fileprivate var interactions: [Interaction] = []
+  private let errorReporter: ErrorReporter
 
   @objc
   open var baseUrl: String {
@@ -18,18 +19,21 @@ open class MockService: NSObject {
 
   public init(provider: String,
               consumer: String,
-              pactVerificationService: PactVerificationService) {
+              pactVerificationService: PactVerificationService,
+              errorReporter: ErrorReporter) {
     self.provider = provider
     self.consumer = consumer
 
     self.pactVerificationService = pactVerificationService
+    self.errorReporter = errorReporter
   }
 
   @objc(initWithProvider: consumer:)
   public convenience init(provider: String, consumer: String) {
     self.init(provider: provider,
               consumer: consumer,
-              pactVerificationService: PactVerificationService())
+              pactVerificationService: PactVerificationService(),
+              errorReporter: XCodeErrorReporter())
   }
 
   @objc
@@ -65,7 +69,8 @@ open class MockService: NSObject {
           done()
         }
       }.onFailure { error in
-        fail("Error setting up pact: \(error.localizedDescription)")
+        self.failWithLocation("Error setting up pact: \(error.localizedDescription)", file: file, line: line)
+        done()
       }
     }
 
@@ -77,15 +82,16 @@ open class MockService: NSObject {
           self.failWithLocation("Verification error (check build log for mismatches): \(error.localizedDescription)",
             file: file,
             line: line)
+          done()
         }
     }
   }
 
   func failWithLocation(_ message: String, file: FileString?, line: UInt?) {
     if let fileName = file, let lineNumber = line {
-      fail(message, file: fileName, line: lineNumber)
+      self.errorReporter.reportFailure(message, file: fileName, line: lineNumber)
     } else {
-      fail(message)
+      self.errorReporter.reportFailure(message)
     }
   }
 
@@ -99,5 +105,4 @@ open class MockService: NSObject {
       return waitUntil(timeout: timeout, action: action)
     }
   }
-
 }
