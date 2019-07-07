@@ -15,4 +15,8 @@ class ErrorCapture: ErrorReporter {
   func reportFailure(_ message: String, file: String, line: UInt) {
     self.message = ErrorReceived(message: message, file: file, line: line)
   }
+
+  func clear() {
+    self.message = nil
+  }
 }

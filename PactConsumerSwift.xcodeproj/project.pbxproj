@@ -13,9 +13,16 @@
 		A109FBAC22CB6A9D007B46F7 /* XCodeErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */; };
 		A109FBAE22CB6AA5007B46F7 /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */; };
 		A109FBAF22CB6AA6007B46F7 /* ErrorReporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */; };
-		A109FBC322CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
-		A109FBC422CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
-		A109FBC522CCB9D7007B46F7 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */; };
+		A109FBC722CCBB55007B46F7 /* MockServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC622CCBB55007B46F7 /* MockServiceSpec.swift */; };
+		A109FBC822CCBB55007B46F7 /* MockServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC622CCBB55007B46F7 /* MockServiceSpec.swift */; };
+		A109FBC922CCBB55007B46F7 /* MockServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109FBC622CCBB55007B46F7 /* MockServiceSpec.swift */; };
+		A109FBCB22CCC376007B46F7 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109FBCA22CCC376007B46F7 /* OHHTTPStubs.framework */; };
+		A1B2BE9222D19924009B0837 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9122D19924009B0837 /* ErrorCapture.swift */; };
+		A1B2BE9322D19924009B0837 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9122D19924009B0837 /* ErrorCapture.swift */; };
+		A1B2BE9422D19924009B0837 /* ErrorCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9122D19924009B0837 /* ErrorCapture.swift */; };
+		A1B2BE9622D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9522D19949009B0837 /* RubyPactMockServiceStub.swift */; };
+		A1B2BE9722D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9522D19949009B0837 /* RubyPactMockServiceStub.swift */; };
+		A1B2BE9822D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2BE9522D19949009B0837 /* RubyPactMockServiceStub.swift */; };
 		AD01EDB61F74BF4A00827C66 /* InteractionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD17A6511F74BAA900219F39 /* InteractionSpec.swift */; };
 		AD17A5921F74AF5300219F39 /* PactConsumerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD17A5881F74AF5300219F39 /* PactConsumerSwift.framework */; };
 		AD17A5991F74AF5300219F39 /* PactConsumerSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = AD17A58B1F74AF5300219F39 /* PactConsumerSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,7 +119,10 @@
 /* Begin PBXFileReference section */
 		A109FBA722CB6A6C007B46F7 /* XCodeErrorReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCodeErrorReporter.swift; sourceTree = "<group>"; };
 		A109FBA822CB6A6C007B46F7 /* ErrorReporter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorReporter.swift; sourceTree = "<group>"; };
-		A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCapture.swift; sourceTree = "<group>"; };
+		A109FBC622CCBB55007B46F7 /* MockServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockServiceSpec.swift; sourceTree = "<group>"; };
+		A109FBCA22CCC376007B46F7 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		A1B2BE9122D19924009B0837 /* ErrorCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorCapture.swift; sourceTree = "<group>"; };
+		A1B2BE9522D19949009B0837 /* RubyPactMockServiceStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RubyPactMockServiceStub.swift; sourceTree = "<group>"; };
 		AD17A5881F74AF5300219F39 /* PactConsumerSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PactConsumerSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD17A58B1F74AF5300219F39 /* PactConsumerSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PactConsumerSwift.h; sourceTree = "<group>"; };
 		AD17A58C1F74AF5300219F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -168,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A109FBCB22CCC376007B46F7 /* OHHTTPStubs.framework in Frameworks */,
 				AD17A5921F74AF5300219F39 /* PactConsumerSwift.framework in Frameworks */,
 				ADC03E1E1F74C492003FCA6A /* Alamofire.framework in Frameworks */,
 				ADC03E1F1F74C492003FCA6A /* BrightFutures.framework in Frameworks */,
@@ -244,12 +255,13 @@
 			path = Reporting;
 			sourceTree = "<group>";
 		};
-		A109FBC122CCB9D7007B46F7 /* Reporting */ = {
+		A1B2BE9022D19924009B0837 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				A109FBC222CCB9D7007B46F7 /* ErrorCapture.swift */,
+				A1B2BE9122D19924009B0837 /* ErrorCapture.swift */,
+				A1B2BE9522D19949009B0837 /* RubyPactMockServiceStub.swift */,
 			);
-			path = Reporting;
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		AD17A57C1F74AF1000219F39 = {
@@ -293,10 +305,11 @@
 		AD17A5EA1F74B03500219F39 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				A109FBC122CCB9D7007B46F7 /* Reporting */,
+				A1B2BE9022D19924009B0837 /* Mocks */,
 				AD17A5F51F74B0CA00219F39 /* PactConsumerSwiftTests */,
 				AD17A5EE1F74B09D00219F39 /* Supporting Files */,
 				AD17A6511F74BAA900219F39 /* InteractionSpec.swift */,
+				A109FBC622CCBB55007B46F7 /* MockServiceSpec.swift */,
 				AD17A6501F74BAA900219F39 /* MatcherSpec.swift */,
 			);
 			path = Tests;
@@ -341,6 +354,7 @@
 		ADC03E171F74C2C0003FCA6A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A109FBCA22CCC376007B46F7 /* OHHTTPStubs.framework */,
 				ADC03E331F74C8A5003FCA6A /* Alamofire.framework */,
 				ADC03E441F74E68D003FCA6A /* Alamofire.framework */,
 				ADC03E321F74C8A5003FCA6A /* BrightFutures.framework */,
@@ -793,13 +807,14 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 			);
 			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "PATH=/usr/local/bin:$PATH\n\ncarthage copy-frameworks";
+			shellScript = "PATH=/usr/local/bin:$PATH\n\ncarthage copy-frameworks\n";
 		};
 		AD17A62C1F74B6EC00219F39 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -861,11 +876,13 @@
 			files = (
 				AD17A65E1F74BB7E00219F39 /* PactSpecs.swift in Sources */,
 				AD17A65B1F74BB7E00219F39 /* AnimalServiceClient.swift in Sources */,
-				A109FBC322CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A65D1F74BB7E00219F39 /* MatcherSpec.swift in Sources */,
+				A1B2BE9222D19924009B0837 /* ErrorCapture.swift in Sources */,
 				AD17A6551F74BB7300219F39 /* OCAnimalServiceClient.m in Sources */,
 				AD17A6561F74BB7300219F39 /* PactObjectiveCTests.m in Sources */,
+				A109FBC722CCBB55007B46F7 /* MockServiceSpec.swift in Sources */,
 				AD01EDB61F74BF4A00827C66 /* InteractionSpec.swift in Sources */,
+				A1B2BE9622D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -888,11 +905,13 @@
 			files = (
 				AD17A6571F74BB7400219F39 /* OCAnimalServiceClient.m in Sources */,
 				AD17A65F1F74BB7E00219F39 /* AnimalServiceClient.swift in Sources */,
-				A109FBC422CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A6621F74BB7E00219F39 /* PactSpecs.swift in Sources */,
+				A1B2BE9322D19924009B0837 /* ErrorCapture.swift in Sources */,
 				AD17A6581F74BB7400219F39 /* PactObjectiveCTests.m in Sources */,
 				AD17A6611F74BB7E00219F39 /* MatcherSpec.swift in Sources */,
+				A109FBC822CCBB55007B46F7 /* MockServiceSpec.swift in Sources */,
 				AD17A6601F74BB7E00219F39 /* InteractionSpec.swift in Sources */,
+				A1B2BE9722D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,11 +934,13 @@
 			files = (
 				ADC03E3F1F74C987003FCA6A /* OCAnimalServiceClient.m in Sources */,
 				AD17A6631F74BB7F00219F39 /* AnimalServiceClient.swift in Sources */,
-				A109FBC522CCB9D7007B46F7 /* ErrorCapture.swift in Sources */,
 				AD17A6661F74BB7F00219F39 /* PactSpecs.swift in Sources */,
+				A1B2BE9422D19924009B0837 /* ErrorCapture.swift in Sources */,
 				ADC03E401F74C989003FCA6A /* PactObjectiveCTests.m in Sources */,
 				ADC03E3D1F74C920003FCA6A /* InteractionSpec.swift in Sources */,
+				A109FBC922CCBB55007B46F7 /* MockServiceSpec.swift in Sources */,
 				ADC03E3E1F74C920003FCA6A /* MatcherSpec.swift in Sources */,
+				A1B2BE9822D19949009B0837 /* RubyPactMockServiceStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

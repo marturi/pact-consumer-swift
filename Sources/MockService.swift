@@ -77,7 +77,7 @@ open class MockService: NSObject {
     waitUntilWithLocation(timeout: timeout, file: file, line: line) { done in
         self.pactVerificationService.verify(provider: self.provider,
                                             consumer: self.consumer).onSuccess { _ in
-                                                done()
+          done()
         }.onFailure { error in
           self.failWithLocation("Verification error (check build log for mismatches): \(error.localizedDescription)",
             file: file,
