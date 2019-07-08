@@ -23,7 +23,7 @@ before_install:
 script:
   - set -o pipefail
   - swiftlint
-  - carthage build --no-skip-current --platform $CARTHAGE_PLATFORM
+  - carthage build --no-use-binaries --no-skip-current --platform $CARTHAGE_PLATFORM
   - scripts/build.sh
   - bash <(curl -s https://codecov.io/bash) -J 'PactConsumerSwift'
 after_script: scripts/delete_keychain.sh
