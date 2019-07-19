@@ -63,7 +63,7 @@ class MockServiceSpec: QuickSpec {
         }
         expect(pactServicePactStub!.writePactStub.requestExecuted).to(equal(true))
         expect(pactServicePactStub!.writePactStub.requestBody).to(contain(
-          "\"provider\":{\"name\":\"ABC Service\""
+          "\"provider\":{\"name\":\"ABC Seice\""
         ))
         expect(pactServicePactStub!.writePactStub.requestBody).to(contain(
           "\"consumer\":{\"name\":\"unit tests\""
