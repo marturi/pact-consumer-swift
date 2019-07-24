@@ -47,7 +47,7 @@ open class MockService: NSObject {
   }
 
   @objc(run:)
-  open func objcRun(_ testFunction: @escaping (_ testComplete: () -> Void) -> Void) {
+  open func objcRun(_ testFunction: @escaping (_ testComplete:@escaping () -> Void) -> Void) {
     self.run(nil, line: nil, timeout: 30, testFunction: testFunction)
   }
 
